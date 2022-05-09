@@ -28,23 +28,8 @@ export default function BeanieDetail() {
             
       <Link to='/'>Home</Link>
       <div className='beanie-detail' onClick={handleBeanieClick}>
-        <div className='beanie-data'>
-          <p>{beanieBaby.animal}</p>
-          <p>{beanieBaby.title}</p>
-          <p>Zodiac: {beanieBaby.astroSign}</p>
-          <p> Born on {beanieBaby.birthday}</p>
-          <img className='beanie-img' src={beanieBaby.image}/>
-          <p>Color: {beanieBaby.color}</p>
-          <p>Release Date: {beanieBaby.releaseDate}</p>
-          <p>Retirement Date: {beanieBaby.retirementDate}</p>
-
-          <p>Size: {beanieBaby.size}</p>
-          <p>Theme: {beanieBaby.theme}</p>
-          <p>Sub-Theme: {beanieBaby.subtheme}</p>
-          <p>Style Number: {beanieBaby.styleNumber}</p>
-          <p>Swing Tag Generation: {beanieBaby.swingTagGeneration}</p>
-          <p>Tush Tag Generation: {beanieBaby.tushTagGeneration}</p>
-        </div>
+        <img src={beanieBaby.image} />
+        <p>{JSON.stringify(beanieBaby)}</p>
       </div>  
     </>
   );
