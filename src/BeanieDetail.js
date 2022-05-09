@@ -21,7 +21,6 @@ export default function BeanieDetail() {
     // here's a challenge. How can you link on click to the beanie baby's correct entry in the official beanie baby fan site?
     window.location.replace(beanieBaby.link);
   }
-
   return (
     <>
       {/* Feel free to uncomment and use the below code--but you'll need to figure out how to keep it from blowing up on load */}
