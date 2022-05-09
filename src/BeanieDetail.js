@@ -29,7 +29,7 @@ export default function BeanieDetail() {
       <Link to='/'>Home</Link>
       <div className='beanie-detail' onClick={handleBeanieClick}>
         <img src={beanieBaby.image} />
-        <p>{JSON.stringify(beanieBaby)}</p>
+        <p>{beanieBaby.title}</p>
       </div>  
     </>
   );
